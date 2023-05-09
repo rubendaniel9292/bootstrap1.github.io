@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="CSS/all.min.css" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <title>Mi portafolio</title>
+</head>
+
+<body>
+    <!-- ventana modal del boton buscar-->
+    <section id="buscador-modal">
+        <div class="d-flex justify-content-center align-items-center  w-100 h-100">
+            <a href="#" class="btn-cerrar"><i class="fas fa-times"></i></a>
+            <form action="" class="mb-0 container w-100 d-flex">
+                <input class="form-control" type="text" id="nombre" placeholder="Ingrese su búsqueda">
+                <button type="button" id="buscar" class="btn btn-primary px-sm-5"><i class="fas fa-search"></i> <span
+                        class="d-none d-md-inline-block ms-2">Buscar</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Encabezados-->
+    <header id="header">
+        <section class="bar-contact bg-dark text-light py-2">
+            <div class="container-fluid">
+                <div class="row justify-content-between justify-content-md-end">
+                    <div class="col-auto">
+                        <span>
+                            <i class="fas fa-phone fa-flip-horizontal me-2"></i>
+                            +09522222254
+                        </span>
+                    </div>
+                    <div class="col-auto">
+                        <span>
+                            <i class="fas fa-envelope-open"></i>
+                            alguien@prueba.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-md navbar-light bg-light py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="Logo del sitio" width="150px" srcset="">
+                </a>
+
+                <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button type="button" class="btn-buscar order-md-1">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="menu-nos" data-bs-toggle="dropdown" href="#"
+                                aria-current="page" role="button" aria-expanded="false" aria-haspopup="true">
+                                <i class="far fa-bell me-1"></i>Nosotros</a>
+                            <ul class="dropdown-menu" aria-labelledby="menu-nos">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Vision</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-balance-scale"></i>Mision</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-address-card"></i>Historia</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mega-menu">
+                            <a class="nav-link dropdown-toggle" id="menu-servicios" data-bs-toggle="dropdown"
+                                href="#"><i class="fas fa-bullhorn me-1"></i>Servicios</a>
+                            <div class="dropdown-menu" aria-labelledby="menu-servicios">
+                                <section class="row px-2">
+                                    <div class="col-12  col-sm-6  col-xl-3 mb-2">
+                                        <h6 class="dropdown-header border-bottom mb-1">PAGINAS WEB</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Diseño
+                                            web</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Diseño de
+                                            tiendas</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Pasarelas
+                                            de pago</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Hosting y
+                                            dominio</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6  col-xl-3  mb-2">
+                                        <h6 class="dropdown-header border-bottom mb-1">MARKETING ONILNE</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>SEO</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Google
+                                            Adwork</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Facebook
+                                            Ads</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Email
+                                            marketing</a>
+                                    </div>
+
+                                    <div class="col-12  col-sm-6 col-xl-3  mb-2">
+                                        <h6 class="dropdown-header border-bottom mb-1">BRANDING</h6>
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-address-book"></i>Logotipo</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Videos</a>
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-address-book"></i>Terjetas</a>
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-address-book"></i>Borchure</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6  col-xl-3 ">
+                                        <h6 class="dropdown-header border-bottom mb-1">SOCIAL MEDIA</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Pan de
+                                            marketing</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Estrategia
+                                            digital</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>Comunity
+                                            manager</a>
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-address-book"></i>Optimizacion</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="bienvenidos">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4 fw-bold">MÁRKETING ESTATÉGICO</h1>
+                        <p class="h1 mb-4">Te ayudamos a conseguir <br class="d-md-none"> <span
+                                class="typed border-bottom fw-bold"></span></p>
+                        <a href="" class="btn btn-primary btn-lg">CONTÁCTANOS</a>
+                        <a href="" class="btn btn-lg btn-outline-light">PROYECTOS</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <section id="quienes-somos" class="py-5 bg-light">
+        <div class="container-fluid">
+            <header class="text-center text-secondary mb-3">
+                <h2 class="displey-4 fw-bold">¿QUIENES SOMOS?</h2>
+                <p class="lead mt-3 mb-0">ALGUNOS CASOS QUE DEBES SABER SOBRE NOSOTROS</p>
+                <span class="separador"></span>
+            </header>
+            <div class="row">
+                <div class="col-12 col-md-7 col-xl-9">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis modi placeat aut dolorem
+                        sequi, officiis impedit! Beatae voluptatibus natus autem! Hic nesciunt repellendus commodi natus
+                        quos a. Deserunt, quia temporibus.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis modi placeat aut dolorem
+                        sequi, officiis impedit! Beatae voluptatibus natus autem! Hic nesciunt repellendus commodi natus
+                        quos a. Deserunt, quia temporibus.</p>
+                </div>
+                <div class="col-12 col-md-5 col-xl-3">
+                    <img src="/img/la-empresa.svg" alt="la empresa" srcset="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="main" class="py-5 bg-primary text-white text-center">
+        <div class="container-fluid">
+            <header class="text-center mb-3">
+                <h2 class="displey-4 fw-bold">¿POR QUÉ ELEGIRNOS?</h2>
+                <span class="separador bg-white"></span>
+            </header>
+            <div class="row">
+                <div class="col-12  col-md-6 col-xl-3 mb-2 mb-xl-0">
+                    <h3 class="fw-bold mb-4">Aplicaciones móbiles</h3>
+                    <i class="fab fa-searchengin fa-5x mb-4"></i>
+                    <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam quam
+                        repudiandae veritatis
+                        magni provident est, ut facilis! Commodi similique expedita dolorum sunt, sint tempore id rem
+                        libero architecto qui?</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-2 mb-xl-0">
+                    <h3 class="fw-bold mb-4">Fabrica de software</h3>
+                    <i class="fas fa-calendar-week fa-5x mb-4"></i>
+                    <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam quam
+                        repudiandae veritatis
+                        magni provident est, ut facilis! Commodi similique expedita dolorum sunt, sint tempore id rem
+                        libero architecto qui?</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-2 mb-xl-0">
+                    <h3 class="fw-bold mb-4">Consultorai tegnologica</h3>
+
+                    <i class="fas fa-bell fa-5x mb-4"></i>
+
+                    <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam quam
+                        repudiandae veritatis
+                        magni provident est, ut facilis! Commodi similique expedita dolorum sunt, sint tempore id rem
+                        libero architecto qui?</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="fw-bold mb-4">Pubicidad para mobiles</h3>
+                    <i class="fas fa-copy fa-5x mb-4"></i>
+                    <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam quam
+                        repudiandae veritatis
+                        magni provident est, ut facilis! Commodi similique expedita dolorum sunt, sint tempore id rem
+                        libero architecto qui?</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <section id="proyectos" class="py-5">
+        <div class="container-fluid">
+            <header class="text-center text-secondary mb-3 text-uppercase">
+                <h2 class="displey-4 fw-bold">nuestros clientes</h2>
+                <p class="lead mt-3 mb-0">Marcas importantes confian en nuestra trayectoria</p>
+                <span class="separador"></span>
+            </header>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <a href="#" class="proyecto">
+                        <div class="mask">
+                            <h3>America travel</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim iste
+                            </p>
+                            <span class="btn btn-outline-light">Ver Proyecto</span>
+                        </div>
+                        <img src="/img/proyecto1.jpg" alt="proyecto 1" class="img-fluid" srcset="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <a href="#" class="proyecto">
+                        <div class="mask">
+                            <h3>Decoraciones mpntalvo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim iste
+                            </p>
+                            <span class="btn btn-outline-light">Ver Proyecto</span>
+                        </div>
+                        <img src="/img/proyecto2.jpg" alt="proyecto 1" class="img-fluid" srcset="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <a href="#" class="proyecto">
+                        <div class="mask">
+                            <h3>Ecneuntro latinos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim iste
+                            </p>
+                            <span class="btn btn-outline-light">Ver Proyecto</span>
+                        </div>
+                        <img src="/img/proyecto3.jpg" alt="proyecto 1" class="img-fluid" srcset="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <a href="#" class="proyecto">
+                        <div class="mask">
+                            <h3>Blog de Mary</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim iste
+                            </p>
+                            <span class="btn btn-outline-light">Ver Proyecto</span>
+                        </div>
+                        <img src="/img/proyecto4.jpg" alt="proyecto 1" class="img-fluid" srcset="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <a href="#" class="proyecto">
+                        <div class="mask">
+                            <h3>Estrategias sociales</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim iste
+                            </p>
+                            <span class="btn btn-outline-light">Ver Proyecto</span>
+                        </div>
+                        <img src="/img/proyecto5.jpg" alt="proyecto 1" class="img-fluid" srcset="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <a href="#" class="proyecto">
+                        <div class="mask">
+                            <h3>Cooworking</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim iste
+                            </p>
+                            <span class="btn btn-outline-light">Ver Proyecto</span>
+                        </div>
+                        <img src="/img/proyecto6.jpg" alt="proyecto 1" class="img-fluid" srcset="">
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <footer id="footer" class="bg-dark text-white py-3 small text-center text-md-end">
+        <div class="container-fluid">
+            2021 @ DANIEL RIVAS WEB. Todos los derechos reservados
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="JS/typed.min.js"></script>
+    <script src="JS/funciones.js"></script>
+
+</body>
+
+</html>
